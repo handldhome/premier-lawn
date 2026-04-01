@@ -9,8 +9,8 @@ const services = [
     description:
       "Regular mowing, edging, and cleanup so your lawn always looks sharp — without you lifting a finger.",
     image:
-      "https://images.unsplash.com/photo-1690068023694-053da714f95f?w=800&q=80&fit=crop",
-    alt: "Close-up of a lawn mower cutting green grass on a sunny day",
+      "https://images.unsplash.com/photo-1683316924890-6a8c5ab10d29?w=800&q=80&fit=crop",
+    alt: "Professional landscaper maintaining a yard with trimming equipment",
   },
   {
     name: "Landscaping",
@@ -33,8 +33,8 @@ const services = [
     description:
       "A properly installed sprinkler system saves water and keeps your landscape lush all year long.",
     image:
-      "https://images.unsplash.com/photo-1567387384066-7b7e3e971098?w=800&q=80&fit=crop",
-    alt: "Water sprinklers spraying on grass and trees",
+      "https://images.unsplash.com/photo-1622122123829-e0490a288d04?w=800&q=80&fit=crop",
+    alt: "Impact sprinkler watering a lush green residential lawn",
   },
   {
     name: "Sod Installation",
@@ -49,8 +49,8 @@ const services = [
     description:
       "Patios, walkways, retaining walls — we design and build hardscapes that are as functional as they are beautiful.",
     image:
-      "https://images.unsplash.com/photo-1657383543451-e47d1589195d?w=800&q=80&fit=crop",
-    alt: "Beautiful California hardscaped patio with stone fireplace and pool at sunset",
+      "https://images.unsplash.com/photo-1706808849780-7a04fbac83ef?w=800&q=80&fit=crop",
+    alt: "Modern concrete patio with pool and lounge area in a landscaped California yard",
   },
 ];
 
