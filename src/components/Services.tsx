@@ -17,21 +17,13 @@ const services = [
     description:
       "Custom landscaping that turns your outdoor space into somewhere you actually want to spend time.",
     image:
-      "https://images.unsplash.com/photo-1740823189466-6bc80aaccb80?w=800&q=80&fit=crop",
-    alt: "Colorful flowers blooming in a landscaped garden bed",
+      "https://images.unsplash.com/photo-1722102419763-cec9a7c94ff1?w=800&q=80&fit=crop",
+    alt: "A garden filled with colorful flowers and landscaping",
   },
   {
-    name: "Tree Trimming & Pruning",
+    name: "Tree Trimming & Removal",
     description:
-      "Healthy, beautiful trees start with the right cut. We keep yours thriving and your neighbors impressed.",
-    image:
-      "https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=800&q=80&fit=crop",
-    alt: "Pruning shears on a tree branch close-up",
-  },
-  {
-    name: "Tree Removal",
-    description:
-      "Safe, efficient removal of unwanted or hazardous trees — big or small, we've got it covered.",
+      "From routine pruning to full removal — we keep your trees healthy, safe, and looking their best.",
     image:
       "https://images.unsplash.com/photo-1474742817425-9f91918183b7?w=800&q=80&fit=crop",
     alt: "Man cutting a tree with a chainsaw",
@@ -41,8 +33,8 @@ const services = [
     description:
       "A properly installed sprinkler system saves water and keeps your landscape lush all year long.",
     image:
-      "https://images.unsplash.com/photo-1625244724120-1fd1d34d00f6?w=800&q=80&fit=crop",
-    alt: "Sprinkler head close-up with water spray",
+      "https://images.unsplash.com/photo-1567387384066-7b7e3e971098?w=800&q=80&fit=crop",
+    alt: "Water sprinklers spraying on grass and trees",
   },
   {
     name: "Sod Installation",
