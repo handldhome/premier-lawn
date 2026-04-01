@@ -17,12 +17,12 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Photo */}
           <ScrollReveal>
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
+            <div className="group relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-500">
               <Image
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80&fit=crop"
-                alt="Landscaper at work in a sunny California yard"
+                src="https://images.unsplash.com/photo-1589923188651-268a9765e432?w=800&q=80&fit=crop"
+                alt="Landscaper trimming hedges in a sunny yard"
                 fill
-                className="object-cover"
+                className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 loading="lazy"
                 unoptimized
               />

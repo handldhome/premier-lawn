@@ -53,7 +53,7 @@ export default function Testimonials() {
         <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((t, i) => (
             <ScrollReveal key={t.author} delay={i * 0.15}>
-              <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 h-full flex flex-col">
+              <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-500 h-full flex flex-col">
                 <Stars />
                 <blockquote className="mt-4 flex-1 text-warm-gray leading-relaxed">
                   &ldquo;{t.quote}&rdquo;

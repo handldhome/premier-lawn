@@ -33,8 +33,8 @@ const services = [
     description:
       "Safe, efficient removal of unwanted or hazardous trees — big or small, we've got it covered.",
     image:
-      "https://images.unsplash.com/photo-1564419320461-6870880221ad?w=800&q=80&fit=crop",
-    alt: "Worker with chainsaw in a tree",
+      "https://images.unsplash.com/photo-1598902108854-d1446677247c?w=800&q=80&fit=crop",
+    alt: "Arborist cutting tree branches with chainsaw",
   },
   {
     name: "Sprinkler System Installation",
@@ -57,8 +57,8 @@ const services = [
     description:
       "Patios, walkways, retaining walls — we design and build hardscapes that are as functional as they are beautiful.",
     image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80&fit=crop",
-    alt: "Clean paver patio in a California yard",
+      "https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=800&q=80&fit=crop",
+    alt: "Stone paver patio with clean landscaping",
   },
 ];
 
@@ -79,19 +79,27 @@ export default function Services() {
         <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, i) => (
             <ScrollReveal key={service.name} delay={i * 0.1}>
-              <div className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+              <div className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <Image
                     src={service.image}
                     alt={service.alt}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="object-cover transition-all duration-700 ease-out group-hover:scale-110"
                     loading="lazy"
                     unoptimized
                   />
+                  {/* Hover overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  {/* Floating label on hover */}
+                  <div className="absolute bottom-4 left-4 right-4 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                    <span className="inline-block rounded-full bg-white/90 backdrop-blur-sm px-4 py-1.5 text-sm font-semibold text-forest shadow-md">
+                      {service.name}
+                    </span>
+                  </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="font-display text-xl font-bold text-forest">
+                  <h3 className="font-display text-xl font-bold text-forest group-hover:text-forest-dark transition-colors duration-300">
                     {service.name}
                   </h3>
                   <p className="mt-2 text-warm-gray leading-relaxed">
@@ -99,9 +107,10 @@ export default function Services() {
                   </p>
                   <a
                     href="#contact"
-                    className="mt-4 inline-block text-sm font-medium text-sage transition-colors hover:text-forest"
+                    className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-sage transition-all duration-300 hover:text-forest hover:gap-2"
                   >
-                    Learn More ›
+                    Learn More
+                    <span className="transition-transform duration-300 group-hover:translate-x-1">›</span>
                   </a>
                 </div>
               </div>

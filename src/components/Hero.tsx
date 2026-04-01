@@ -26,6 +26,23 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
 
       <div className="relative z-10 mx-auto max-w-4xl px-4 pt-24 pb-16 text-center">
+        {/* TODO: Replace with transparent background version */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
+          className="mb-8 flex justify-center"
+        >
+          <Image
+            src="/images/premier-logo.png"
+            alt="Premier Lawn & Landscape"
+            width={200}
+            height={68}
+            className="h-20 sm:h-24 w-auto"
+            unoptimized
+          />
+        </motion.div>
+
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -41,8 +58,8 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="mt-6 text-lg sm:text-xl text-white/85 max-w-2xl mx-auto leading-relaxed"
         >
-          Premier Lawn &amp; Landscape has been transforming yards across Southern
-          California for over 10 years. Residential and commercial. Free
+          Premier Lawn &amp; Landscape has been transforming yards across LA
+          County for over 10 years. Residential and commercial. Free
           estimates. Just give us a call.
         </motion.p>
 

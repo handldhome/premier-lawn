@@ -24,7 +24,7 @@ export default function Footer() {
               unoptimized
             />
             <p className="mt-4 text-sm text-white/70 leading-relaxed">
-              Transforming Southern California yards, one property at a time.
+              Transforming LA County yards, one property at a time.
             </p>
           </div>
 
@@ -70,8 +70,8 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                Serving residential &amp; commercial clients throughout Southern
-                California
+                Serving residential &amp; commercial clients throughout LA
+                County
               </li>
             </ul>
           </div>

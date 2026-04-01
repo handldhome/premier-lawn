@@ -15,16 +15,16 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-forest">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex-shrink-0">
             {/* TODO: Replace with transparent background version */}
             <Image
               src="/images/premier-logo.png"
               alt="Premier Lawn & Landscape"
-              width={160}
-              height={56}
-              className="h-14 w-auto"
+              width={220}
+              height={72}
+              className="h-16 sm:h-18 w-auto"
               unoptimized
             />
           </a>

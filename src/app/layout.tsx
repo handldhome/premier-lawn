@@ -15,13 +15,13 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Premier Lawn & Landscape Corporation | Southern California Landscaping",
+  title: "Premier Lawn & Landscape Corporation | LA County Landscaping",
   description:
-    "Professional landscaping, lawn maintenance, tree trimming, hardscaping, and more for residential and commercial properties throughout Southern California. Free estimates — call 747-240-9647.",
+    "Professional landscaping, lawn maintenance, tree trimming, hardscaping, and more for residential and commercial properties throughout LA County. Free estimates — call 747-240-9647.",
   keywords: [
     "landscaping",
     "lawn care",
-    "Southern California",
+    "LA County",
     "tree trimming",
     "hardscaping",
     "sprinkler installation",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Premier Lawn & Landscape Corporation",
     description:
-      "Transforming Southern California yards for over 10 years. Residential & commercial. Free estimates.",
+      "Transforming LA County yards for over 10 years. Residential & commercial. Free estimates.",
     type: "website",
   },
 };

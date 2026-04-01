@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import ScrollReveal from "./ScrollReveal";
 
 export default function Contact() {
@@ -7,6 +8,17 @@ export default function Contact() {
     <section id="contact" className="bg-forest py-20 sm:py-28">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
         <ScrollReveal>
+          {/* TODO: Replace with transparent background version */}
+          <div className="mb-6 flex justify-center">
+            <Image
+              src="/images/premier-logo.png"
+              alt="Premier Lawn & Landscape"
+              width={160}
+              height={54}
+              className="h-14 w-auto opacity-80"
+              unoptimized
+            />
+          </div>
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-white">
             Ready for a yard you&apos;re proud of?
           </h2>
@@ -32,8 +44,8 @@ export default function Contact() {
             </a>
           </div>
           <p className="mt-6 text-sm text-white/50">
-            We serve residential and commercial properties throughout Southern
-            California.
+            We serve residential and commercial properties throughout LA
+            County.
           </p>
         </ScrollReveal>
       </div>
