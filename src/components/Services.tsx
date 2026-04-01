@@ -9,8 +9,8 @@ const services = [
     description:
       "Regular mowing, edging, and cleanup so your lawn always looks sharp — without you lifting a finger.",
     image:
-      "https://images.unsplash.com/photo-1561454260-8559bd155736?w=800&q=80&fit=crop",
-    alt: "Person pushing a lawn mower across a green lawn",
+      "https://images.unsplash.com/photo-1690068023694-053da714f95f?w=800&q=80&fit=crop",
+    alt: "Close-up of a lawn mower cutting green grass on a sunny day",
   },
   {
     name: "Landscaping",
@@ -49,8 +49,8 @@ const services = [
     description:
       "Patios, walkways, retaining walls — we design and build hardscapes that are as functional as they are beautiful.",
     image:
-      "https://images.unsplash.com/photo-1622440931583-79821fdbfdf2?w=800&q=80&fit=crop",
-    alt: "Beautiful patio with outdoor furniture on green lawn",
+      "https://images.unsplash.com/photo-1657383543451-e47d1589195d?w=800&q=80&fit=crop",
+    alt: "Beautiful California hardscaped patio with stone fireplace and pool at sunset",
   },
 ];
 
