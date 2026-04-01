@@ -15,15 +15,16 @@ export default function About() {
     <section id="about" className="bg-white py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Photo */}
+          {/* Company logo — enlarged */}
           <ScrollReveal>
-            <div className="group relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-500">
+            <div className="flex items-center justify-center rounded-2xl bg-forest p-12 lg:p-16 aspect-[4/3]">
+              {/* TODO: Replace with transparent background version */}
               <Image
-                src="https://images.unsplash.com/photo-1683316924890-6a8c5ab10d29?w=800&q=80&fit=crop"
-                alt="Man mowing grass in a sunny yard"
-                fill
-                className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                loading="lazy"
+                src="/images/premier-logo.png"
+                alt="Premier Lawn & Landscape"
+                width={400}
+                height={200}
+                className="w-full max-w-md h-auto"
                 unoptimized
               />
             </div>
@@ -32,7 +33,7 @@ export default function About() {
           {/* Copy */}
           <ScrollReveal delay={0.2}>
             <h2 className="font-display text-3xl sm:text-4xl font-bold text-forest">
-              10 years. Thousands of happy yards.
+              A decade of making yards look their best.
             </h2>
             <div className="mt-6 space-y-4 text-warm-gray leading-relaxed">
               <p>
