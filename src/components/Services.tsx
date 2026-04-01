@@ -17,8 +17,8 @@ const services = [
     description:
       "Custom landscaping that turns your outdoor space into somewhere you actually want to spend time.",
     image:
-      "https://images.unsplash.com/photo-1585320806297-9794b3e4aaae?w=800&q=80&fit=crop",
-    alt: "Beautifully manicured garden beds",
+      "https://images.unsplash.com/photo-1740823189466-6bc80aaccb80?w=800&q=80&fit=crop",
+    alt: "Colorful flowers blooming in a landscaped garden bed",
   },
   {
     name: "Tree Trimming & Pruning",
@@ -33,8 +33,8 @@ const services = [
     description:
       "Safe, efficient removal of unwanted or hazardous trees — big or small, we've got it covered.",
     image:
-      "https://images.unsplash.com/photo-1598902108854-d1446677247c?w=800&q=80&fit=crop",
-    alt: "Arborist cutting tree branches with chainsaw",
+      "https://images.unsplash.com/photo-1474742817425-9f91918183b7?w=800&q=80&fit=crop",
+    alt: "Man cutting a tree with a chainsaw",
   },
   {
     name: "Sprinkler System Installation",

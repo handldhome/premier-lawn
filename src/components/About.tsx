@@ -19,8 +19,8 @@ export default function About() {
           <ScrollReveal>
             <div className="group relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-500">
               <Image
-                src="https://images.unsplash.com/photo-1589923188651-268a9765e432?w=800&q=80&fit=crop"
-                alt="Landscaper trimming hedges in a sunny yard"
+                src="https://images.unsplash.com/photo-1683316924890-6a8c5ab10d29?w=800&q=80&fit=crop"
+                alt="Man mowing grass in a sunny yard"
                 fill
                 className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 loading="lazy"

@@ -15,8 +15,8 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background image */}
       <Image
-        src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80&fit=crop"
-        alt="Professional lawn mowing from ground level perspective"
+        src="https://images.unsplash.com/photo-1753012442320-b450d8b80b8b?w=1600&q=80&fit=crop"
+        alt="Beautiful house with a lush green landscaped lawn"
         fill
         className="object-cover"
         preload
