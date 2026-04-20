@@ -4,7 +4,16 @@ import Image from "next/image";
 import { useState } from "react";
 import ScrollReveal from "./ScrollReveal";
 
-const projects = [
+interface Project {
+  title: string;
+  description: string;
+  before: string;
+  after: string;
+  beforePosition?: string;
+  afterPosition?: string;
+}
+
+const projects: Project[] = [
   {
     title: "Backyard Landscape Transformation",
     description: "Complete backyard overhaul with turf, river rock, and stepping stone pathways.",
@@ -16,6 +25,7 @@ const projects = [
     description: "Overgrown front yard replaced with fresh turf, decorative rock borders, and new plantings.",
     before: "/images/work/frontyard-before.jpg",
     after: "/images/work/frontyard-after.jpeg",
+    beforePosition: "top",
   },
   {
     title: "Tree Trimming",
@@ -43,7 +53,7 @@ function BeforeAfterCard({
   project,
   index,
 }: {
-  project: (typeof projects)[number];
+  project: Project;
   index: number;
 }) {
   const [showAfter, setShowAfter] = useState(true);
@@ -59,6 +69,7 @@ function BeforeAfterCard({
             alt={`${project.title} — before`}
             fill
             className={`object-cover transition-opacity duration-500 ${showAfter ? "opacity-0" : "opacity-100"}`}
+            style={project.beforePosition ? { objectPosition: project.beforePosition } : undefined}
             loading="lazy"
             unoptimized
           />
@@ -68,6 +79,7 @@ function BeforeAfterCard({
             alt={`${project.title} — after`}
             fill
             className={`object-cover transition-opacity duration-500 ${showAfter ? "opacity-100" : "opacity-0"}`}
+            style={project.afterPosition ? { objectPosition: project.afterPosition } : undefined}
             loading="lazy"
             unoptimized
           />
