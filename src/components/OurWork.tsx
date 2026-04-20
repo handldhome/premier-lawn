@@ -11,6 +11,8 @@ interface Project {
   after: string;
   beforePosition?: string;
   afterPosition?: string;
+  beforeFit?: "contain" | "cover";
+  afterFit?: "contain" | "cover";
 }
 
 const projects: Project[] = [
@@ -19,6 +21,7 @@ const projects: Project[] = [
     description: "Complete backyard overhaul with turf, river rock, and stepping stone pathways.",
     before: "/images/work/landscape-before.jpeg",
     after: "/images/work/landscape-after.jpeg",
+    afterFit: "contain",
   },
   {
     title: "Front Yard Landscaping",
@@ -62,13 +65,13 @@ function BeforeAfterCard({
     <ScrollReveal delay={index * 0.15}>
       <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
         {/* Image area */}
-        <div className="relative aspect-[4/3] overflow-hidden">
+        <div className="relative aspect-[4/3] overflow-hidden bg-neutral-100">
           {/* Before image */}
           <Image
             src={project.before}
             alt={`${project.title} — before`}
             fill
-            className={`object-cover transition-opacity duration-500 ${showAfter ? "opacity-0" : "opacity-100"}`}
+            className={`${project.beforeFit === "contain" ? "object-contain" : "object-cover"} transition-opacity duration-500 ${showAfter ? "opacity-0" : "opacity-100"}`}
             style={project.beforePosition ? { objectPosition: project.beforePosition } : undefined}
             loading="lazy"
             unoptimized
@@ -78,7 +81,7 @@ function BeforeAfterCard({
             src={project.after}
             alt={`${project.title} — after`}
             fill
-            className={`object-cover transition-opacity duration-500 ${showAfter ? "opacity-100" : "opacity-0"}`}
+            className={`${project.afterFit === "contain" ? "object-contain" : "object-cover"} transition-opacity duration-500 ${showAfter ? "opacity-100" : "opacity-0"}`}
             style={project.afterPosition ? { objectPosition: project.afterPosition } : undefined}
             loading="lazy"
             unoptimized
